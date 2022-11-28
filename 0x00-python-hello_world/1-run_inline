@@ -1,3 +1,2 @@
 #!/bin/bash
-echo $PYCODE >test.py
-python3 test.py
+echo $PYCODE | python3
