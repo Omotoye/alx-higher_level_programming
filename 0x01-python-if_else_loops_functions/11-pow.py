@@ -12,4 +12,4 @@ def pow(a: int, b: int) -> int:
     Returns:
         int: result from the raise to power operation
     """
-    return a ^ b
+    return a**b
