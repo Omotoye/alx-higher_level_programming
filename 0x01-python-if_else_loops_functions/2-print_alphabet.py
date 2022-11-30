@@ -3,4 +3,4 @@
 """A Program that prints the ASCII alphabet, in lowercase"""
 
 for character in range(97, 123):
-    print(f"{chr(character)}", end="")
+    print("{}".format(chr(character)), end="")
