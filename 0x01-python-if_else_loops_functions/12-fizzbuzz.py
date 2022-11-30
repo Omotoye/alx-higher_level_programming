@@ -11,4 +11,3 @@ def fizzbuzz() -> None:
             print("Fizz", end=" ")
         else:
             print(num, end=" ")
-    print()
