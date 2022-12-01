@@ -3,11 +3,10 @@ from sys import argv, exit
 from typing import Callable, Final
 from calculator_1 import add, sub, mul, div
 
-Operation = dict[str, Callable[[int, int], int]]
-operations: Final[Operation] = {"+": add, "-": sub, "*": mul, "/": div}
-
 
 def main() -> None:
+    Operation = dict[str, Callable[[int, int], int]]
+    operations: Final[Operation] = {"+": add, "-": sub, "*": mul, "/": div}
     argc: int = len(argv) - 1
 
     if argc != 3:
