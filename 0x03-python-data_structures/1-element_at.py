@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def element_at(my_list: list[int], idx: int) -> int | None:
+def element_at(my_list, idx):
     """A function to return the item in a given index
 
     Args:
@@ -12,6 +12,6 @@ def element_at(my_list: list[int], idx: int) -> int | None:
         int | None: None if there's a problem with the given index,
             int if no problem with the given index
     """
-    if idx < 0 or idx > len(my_list) - 1:
+    if idx not in range(0, len(my_list)):
         return None
     return my_list[idx]
