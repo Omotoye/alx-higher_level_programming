@@ -18,8 +18,8 @@ def main() -> None:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    a: int = int(argv[1])
-    b: int = int(argv[3])
+    a = int(argv[1])
+    b = int(argv[3])
     result: int = operations[operator](a, b)
 
     print("{} {} {} = {}".format(a, operator, b, result))
