@@ -11,6 +11,6 @@ def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         if row:
             for n in row:
-                print("{}{}".format(n, "\n" if n is row[-1] else " "), end="")
+                print("{:d}{}".format(n, "\n" if n is row[-1] else " "), end="")
         else:
             print()
