@@ -9,5 +9,8 @@ def print_matrix_integer(matrix=[[]]) -> None:
             printed. Defaults to [[]].
     """
     for row in matrix:
-        for num in row:
-            print("{}{}".format(num, "\n" if num is row[-1] else " "), end="")
+        if row:
+            for n in row:
+                print("{}{}".format(n, "\n" if n is row[-1] else " "), end="")
+        else:
+            print()
