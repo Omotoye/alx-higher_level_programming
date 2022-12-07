@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-from typing import Optional
-
 
 def best_score(a_dict):
     """A function that returns a key with the biggest integer value.
