@@ -22,7 +22,7 @@ def safe_function(fct: FuncType, *args: int) -> FuncRetType:
         FuncRetType: The return value from the given function object
     """
     try:
-        return fct(args)
+        return fct(*args)
     except Exception as error:
         print("Exception: {}".format(error), file=stderr)
         return None
