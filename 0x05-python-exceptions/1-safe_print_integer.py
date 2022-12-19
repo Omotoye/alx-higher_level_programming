@@ -13,10 +13,8 @@ def safe_print_integer(value):
         bool: `true` if `value` has been correctly printed (which
             means the given `value` is an integer)
     """
-    correct_printing = False
     try:
         print("{:d}".format(value))
-        correct_printing = True
+        return True
     except ValueError:
-        pass
-    return correct_printing
+        return False
