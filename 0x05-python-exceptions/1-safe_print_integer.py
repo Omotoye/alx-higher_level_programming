@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def safe_print_integer(value):
+def safe_print_integer(value) -> bool:
     """A function that prints an integer with format method
     if the value given is an integer
 
@@ -16,5 +16,5 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
         return True
-    except ValueError:
+    except Exception:
         return False
