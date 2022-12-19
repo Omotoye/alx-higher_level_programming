@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def safe_print_integer(value) -> bool:
+def safe_print_integer(value):
     """A function that prints an integer with format method
     if the value given is an integer
 
@@ -13,7 +13,7 @@ def safe_print_integer(value) -> bool:
         bool: `true` if `value` has been correctly printed (which
             means the given `value` is an integer)
     """
-    correct_printing: bool = False
+    correct_printing = False
     try:
         print("{:d}".format(value))
         correct_printing = True
