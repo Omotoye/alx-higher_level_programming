@@ -15,3 +15,4 @@ class Square:
     def __init__(self) -> None:
         """Initializing the object attributes"""
         pass
+        
