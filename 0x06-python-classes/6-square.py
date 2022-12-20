@@ -23,7 +23,7 @@ class Square:
             object created
     """
 
-    def __init__(self, size: int = 0, pose: tuple[int, int] = (0, 0)) -> None:
+    def __init__(self, size: int = 0, position=(0, 0)) -> None:
         """Initializes the attributes of the `Square` object instance
 
         Args:
@@ -34,9 +34,9 @@ class Square:
                 Defaults to (0, 0).
         """
         self.__size: int = 0
-        self.__position: tuple[int, int] = (0, 0)
+        self.__position = (0, 0)
         self._size_initializer(size)
-        self._position_initializer(pose)
+        self._position_initializer(position)
 
     @property
     def size(self) -> int:
