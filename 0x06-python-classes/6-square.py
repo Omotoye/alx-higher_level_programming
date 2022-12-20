@@ -77,7 +77,7 @@ class Square:
         else:
             raise TypeError("size must be an integer")
 
-    def _position_initializer(self, position: tuple[int, int]):
+    def _position_initializer(self, position):
         """This helper method check if the position given is a tuple of two
         positive integers
 
