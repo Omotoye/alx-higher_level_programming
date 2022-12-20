@@ -9,7 +9,3 @@ that would be added to in later modules
 
 class Square:
     """An Empty class `Square` that defines a square"""
-
-    def __init__(self) -> None:
-        """Initializes the object attributes"""
-        pass
