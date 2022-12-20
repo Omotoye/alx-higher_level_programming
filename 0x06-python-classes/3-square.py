@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Improved `Square` class definition with Exception Handling
+"""Improved `Square` class definition with area method
 
 This module defines a class `Square` based on the module `2-square.py`, it is
 an extension of the minimal square class that was defined in the said module.
