@@ -42,8 +42,8 @@ class Square:
         size: int = self.__size
         pose_x: str = self.__position[0] * " "
         pose_y: str = self.__position[1] * "\n"
-        return (pose_y + ((pose_x + ("#" * size) + "\n") * size) if size else "\n")[:-1]
-
+        shape = ((pose_x + ("#" * size) + "\n") * size) if size else "\n"
+        return pose_y + shape[:-1]
 
     @property
     def size(self) -> int:
