@@ -39,6 +39,12 @@ class Square:
         self._position_initializer(position)
 
     def __str__(self) -> str:
+        """A magic method that described what should be printed when the
+        object is printed
+
+        Returns:
+            str: the string to be printed when the object is printed
+        """
         size: int = self.__size
         pose_x: str = self.__position[0] * " "
         pose_y: str = self.__position[1] * "\n"
